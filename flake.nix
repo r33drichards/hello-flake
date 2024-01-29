@@ -1,6 +1,6 @@
 {
   outputs = { self, nixpkgs }: {
-    nixosConfigurations.hello = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "aarch64-linux";
       modules = [ 
         ./configuration.nix
